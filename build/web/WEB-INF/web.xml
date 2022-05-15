@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <servlet>
+        <servlet-name>CrearModificarCliente</servlet-name>
+        <servlet-class>Servlets.CrearModificarCliente</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AgregarProductoCar</servlet-name>
+        <servlet-class>Servlets.AgregarProductoCar</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SessionProducto</servlet-name>
+        <servlet-class>Servlets.SessionProducto</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CrearModificarProducto</servlet-name>
+        <servlet-class>Servlets.CrearModificarProducto</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CrearModificarCliente</servlet-name>
+        <url-pattern>/CrearModificarCliente</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AgregarProductoCar</servlet-name>
+        <url-pattern>/AgregarProductoCar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SessionProducto</servlet-name>
+        <url-pattern>/SessionProducto</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CrearModificarProducto</servlet-name>
+        <url-pattern>/CrearModificarProducto</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
